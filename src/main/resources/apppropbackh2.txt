@@ -1,0 +1,2 @@
+spring.application.name=JPAStudent23A
+spring.h2.console.enabled=true
