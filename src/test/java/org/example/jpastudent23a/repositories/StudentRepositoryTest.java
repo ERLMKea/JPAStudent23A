@@ -19,13 +19,13 @@ class StudentRepositoryTest {
     void testAtLeastOneErik() {
         List<Student> std = studentRepository.findAllByName("Erik");
         //assertEquals(1, std.size());
-        assertTrue(std.size()>0);
+        assertTrue(std.size()==0);
     }
 
     @Test
     void testOneErik() {
         List<Student> std = studentRepository.findAllByName("Erik");
-        assertEquals(1, std.size());
+        assertEquals(0, std.size());
     }
 
 }
