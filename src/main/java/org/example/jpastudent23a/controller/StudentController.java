@@ -37,6 +37,11 @@ public class StudentController {
         return studentRepository.findAll();
     }
 
+    @GetMapping("students/hej")
+    public List<Student> getallstudentsbyhej(@PathVariable String name) {
+        return studentRepository.findAllByName(name);
+    }
+
     @GetMapping("students/{name}")
     public List<Student> getallstudentsbyname(@PathVariable String name) {
         return studentRepository.findAllByName(name);
