@@ -1,7 +1,9 @@
-spring.datasource.url=jdbc:mysql://127.0.0.1:3307/student23a
+spring.datasource.url=jdbc:mysql://127.0.0.1:3307/Student23a
 spring.datasource.username=root
 spring.datasource.password=test-1234
 
-spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.hibernate.ddl-auto=update
 
 spring.jpa.show-sql=true
+
+#JDBCPassword=test-1234;JDBCUrl=jdbc:mysql://127.0.0.1:3307/student23a;JDBCUsername=root

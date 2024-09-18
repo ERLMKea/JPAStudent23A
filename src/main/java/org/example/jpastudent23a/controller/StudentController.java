@@ -19,6 +19,12 @@ public class StudentController {
     @Autowired
     StudentRepository studentRepository;
 
+    @GetMapping("/studentsxx")
+    public List<Student> studentsxx() {
+        List<Student> std = studentRepository.findAll();
+        return std;
+    }
+
     @GetMapping("/students")
     public List<Student> students() {
         List<Student> std = studentRepository.findAll();
