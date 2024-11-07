@@ -25,6 +25,18 @@ public class StudentController {
         return std;
     }
 
+    @GetMapping("/hellox")
+    public String hellox() throws InterruptedException {
+        return "Hello World";
+    }
+
+
+    @GetMapping("/hello/{sleep}")
+    public String hellosleep(@PathVariable int sleep) throws InterruptedException {
+        Thread.sleep(sleep);
+        return "Hello World";
+    }
+
     @GetMapping("/students")
     public List<Student> students() {
         List<Student> std = studentRepository.findAll();
